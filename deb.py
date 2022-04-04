@@ -12,5 +12,5 @@ if d:
 
 picture = st.camera_input("Take a picture")
 if picture:
-    st.write('I dig the following person 100!')
+    st.write('I dig the following person 100%!')
     st.image(picture)
