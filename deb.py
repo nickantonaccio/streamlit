@@ -1,11 +1,13 @@
 import streamlit as st
 
+howmuch = st.slider('How much do you dig Nick?', 0, 100)
+
 d = st.date_input(
-    "When's your birthday",
+    "Please pick tomorrow's date",
 )
-st.write('Your birthday is:', d)
 
 picture = st.camera_input("Take a picture")
 if picture:
     st.image(picture)
-    st.write('this person is awesome!')
+    st.write('Deb will still be totally awesome on: ', d)
+    st.write('You dig nick: ', howmuch
