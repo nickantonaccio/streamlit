@@ -12,9 +12,6 @@ d = st.date_input(
      datetime.date(2019, 7, 6))
 st.write('Your birthday is:', d)
 
-import streamlit as st
-
 picture = st.camera_input("Take a picture")
-
 if picture:
      st.image(picture)
