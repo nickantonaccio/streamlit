@@ -2,7 +2,7 @@ import streamlit as st
 
 howmuch = st.slider('How much do you dig Nick?', 0, 100)
 if howmuch:
-    st.write('You dig nick: ', howmuch, '%')
+    st.write('You dig Nick: ', howmuch, '%')
 
 d = st.date_input(
     "Please pick tomorrow's date",
