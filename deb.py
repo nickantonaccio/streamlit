@@ -10,4 +10,4 @@ picture = st.camera_input("Take a picture")
 if picture:
     st.image(picture)
     st.write('Deb will still be totally awesome on: ', d)
-    st.write('You dig nick: ', howmuch
+    st.write('You dig nick: ', howmuch)
