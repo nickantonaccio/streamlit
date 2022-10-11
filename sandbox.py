@@ -20,14 +20,13 @@ THEMES = [
 KEYBINDINGS = ["emacs", "sublime", "vim", "vscode"]
 
 editor, display = st.columns((3, 2))
-INITIAL_CODE = """st.write('Hello')"""
 
 with editor:
   code = st_ace(
-    value=INITIAL_CODE,
+    value="""st.write('Hello')""",
     language="python",
     placeholder="st.write('Hello world')",
-    theme=st.sidebar.selectbox("Theme", options=THEMES, index=2),
+    theme=st.sidebar.selectbox("Theme", options=THEMES, index=6),
     keybinding=st.sidebar.selectbox("Keybinding mode", options=KEYBINDINGS, index=3),
     font_size=st.sidebar.slider("Font size", 5, 24, 14),
     tab_size=st.sidebar.slider("Tab size", 1, 8, 2),
