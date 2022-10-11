@@ -1,6 +1,6 @@
 streamlit_ace
-pandas as pd
-numpy as np
+pandas
+numpy
 streamlit_webrtc
 av
 cv2
