@@ -6,7 +6,7 @@ import pandas as pd
 # import altair as alt
 # import cufflinks as cf
 
-st.set_page_config(page_title='StSandbox Local', page_icon=':memo:', layout='wide', initial_sidebar_state='collapsed')
+st.set_page_config(page_title='Streamlitpython.com Livecode', page_icon=':memo:', layout='wide', initial_sidebar_state='collapsed')
 st.sidebar.title(":memo: Editor Settings")
 
 THEMES = [
