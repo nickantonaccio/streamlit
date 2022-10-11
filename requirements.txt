@@ -2,5 +2,4 @@ streamlit_ace
 pandas
 numpy
 streamlit_webrtc
-av
 st_aggrid
