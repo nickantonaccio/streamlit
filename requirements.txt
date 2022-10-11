@@ -4,3 +4,4 @@ numpy
 streamlit_webrtc
 streamlit-aggrid
 opencv-python-headless
+av
