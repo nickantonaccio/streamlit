@@ -7,7 +7,7 @@ cur=con.cursor()
 cur.execute('CREATE TABLE IF NOT EXISTS todo(item TEXT, note TEXT, date TEXT)')
 
 st.set_page_config(page_title="To Do", layout="wide")
-st.markdown('<style>#MainMenu{visibility: hidden;} footer{visibility: hidden;}#root>div:nth-child(1)>div>div>div>div>section>div{padding-top: 1rem;</style>', unsafe_allow_html=True)
+st.markdown('<style>#MainMenu{visibility: hidden;} footer{visibility: hidden;}#root>div:nth-child(1)>div>div>div>div>section>div{padding-top: 1.5rem;</style>', unsafe_allow_html=True)
 
 st.title('To Do Columns')
 if st.button('Add New Item'):
