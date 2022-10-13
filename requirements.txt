@@ -1,6 +1,7 @@
 streamlit_ace
 pandas
 numpy
+requests
 streamlit_webrtc
 streamlit-aggrid
 opencv-python-headless
