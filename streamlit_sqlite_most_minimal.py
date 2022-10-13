@@ -21,16 +21,3 @@ for row in cur.execute('SELECT rowid, name, letters, note FROM db ORDER BY name'
       if st.form_submit_button("Delete"):
         cur.execute(f'DELETE FROM db WHERE rowid="{row[0]}";')
         con.commit() ; st.experimental_rerun()
-
-apicode='''import sqlite3 ; con=sqlite3.connect('db.db') ; cur=con.cursor()
-from fastapi import FastAPI ; app = FastAPI()
-@app.get("/{col}")
-async def get_col(col: str):
-  return [row for row in cur.execute(f"SELECT {col} FROM db;")]'''
-
-if st.button('Run Web API'): 
-  with open("api.py", "w") as file: file.write(apicode)
-  import os ; os.system('start cmd /K uvicorn api:app')
-  st.markdown(f"""[View API](http://localhost:8000/*) If the API
-  doesn't start, run 'uvicorn api:app' in your OS console & 
-  browse localhost:8000/*""", unsafe_allow_html=True)
