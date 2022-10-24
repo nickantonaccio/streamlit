@@ -1,3 +1,5 @@
+import streamlit as st
+
 text = st.text_area('Type or paste some  text')
 if text:
   word_list = text.split(' ')
