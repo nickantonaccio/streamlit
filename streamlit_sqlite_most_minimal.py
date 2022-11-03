@@ -1,4 +1,5 @@
 import streamlit as st, ast, sqlite3
+
 con=sqlite3.connect('db.db')
 cur=con.cursor()
 cur.execute('CREATE TABLE IF NOT EXISTS db(name TEXT, letters TEXT, note TEXT)')
